@@ -1,6 +1,6 @@
 ---
 name: workflow-controller
-description: Recognize workflow-shaped tasks that are too large for prompt-only orchestration and implement them as ordinary code with atomic coding-agent sub-tasks, explicit accounting, checkpoint and resume, and machine-verifiable contracts. Use when work involves repeated steps, branching, reconciliation, staged analysis, long-running state, or other workflows where skipped work or weak rule adherence would be unacceptable.
+description: Recognize workflow-shaped tasks that are too large for prompt-only orchestration and implement them as ordinary code with atomic coding-agent sub-tasks, explicit accounting, checkpoint and resume, and machine-verifiable contracts. Use when work involves repeated steps, branching, reconciliation, staged analysis, long-running state, or prompts that would otherwise accumulate many `and` clauses or hidden `for each` logic.
 ---
 
 # Workflow Controller
@@ -21,6 +21,8 @@ Treat these signals as evidence that controller code is the right shape:
 - long-running progress that may need interruption and resume
 - staged analysis followed by targeted edits or actions
 - high cost for skipped work or partial completion
+
+A long prompt that still reads like a procedure is usually a trigger signal, not a reason to keep expanding the prompt.
 
 Do not use this skill to justify controller code for one-shot tasks that ordinary programming or a single focused coding-agent call can already handle.
 
