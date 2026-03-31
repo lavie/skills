@@ -1,0 +1,4 @@
+interface:
+  display_name: "Workflow Controller"
+  short_description: "Turn brittle prompts into controller code"
+  default_prompt: "Use -controller to implement this workflow as code plus atomic coding-agent tasks."
