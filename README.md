@@ -1,18 +1,5 @@
 # workflow-controller
 
-Most coding-agent failures do not come from weak models. They come from asking a model to be the workflow engine.
-
-`workflow-controller` is a skill for Codex-style coding agents that teaches a more reliable pattern:
-
-- put control flow in ordinary code
-- keep coding-agent calls small and atomic
-- persist state so long jobs can resume
-- verify every agent result before moving on
-
-If a task keeps accumulating `and` clauses, hidden `for each` loops, retries, exceptions, or multi-step judgment, this skill helps the agent stop prompt-stacking and build the right thing instead.
-
-## A Case Study: Supermarket Shopping
-
 Imagine asking a coding agent:
 
 > Read my shopping list, figure out what each item really means, ask follow-up questions where needed, search my preferred supermarket, compare options, remember my past preferences, build the cart, and prepare checkout.
